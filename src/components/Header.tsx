@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Header() {
   return (
     <header className="flex justify-between items-center m-2">
@@ -38,7 +40,7 @@ export default function Header() {
       <div>
         <button
           type="button"
-          className="text-gray-100 bg-transparent font-bold text-sm px-5 py-2.5 text-center inline-flex items-center"
+          className="text-gray-400 hover:text-gray-100 bg-transparent font-bold text-sm px-5 py-2.5 text-center inline-flex items-center"
         >
           Sign up
         </button>
