@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import SidePanel from "./components/side-panel/SidePanel";
-import HomeScreen from "./components/HomeScreen";
+import HomeScreen from "./components/main-panel/HomeScreen";
 import Footer from "./components/Footer";
 
 function App() {

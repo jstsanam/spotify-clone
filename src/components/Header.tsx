@@ -1,11 +1,12 @@
-import React from "react";
-
 export default function Header() {
   return (
     <header className="flex justify-between items-center m-2">
-      <img src="header-logo.png" alt="logo" className="h-6 w-6" />
+      <img src="/images/header-logo.png" alt="logo" className="h-6 w-6" />
       <div className="flex items-center gap-2">
-        <button className="p-2 rounded-full" style={{ backgroundColor: "#1f1f1f" }}>
+        <button
+          className="p-2 rounded-full"
+          style={{ backgroundColor: "#1f1f1f" }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"

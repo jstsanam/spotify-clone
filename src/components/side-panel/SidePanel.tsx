@@ -1,4 +1,3 @@
-import React from "react";
 import SidePanelCards from "./SidePanelCards";
 import SidePanelFooter from "./SidePanelFooter";
 
