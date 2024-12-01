@@ -1,9 +1,9 @@
-import { sections } from "./json-data";
+import { cardsData } from "./cardsData";
 
-export default function Card() {
+export default function MainPanelCards() {
   return (
     <div className="space-y-12">
-      {sections.map((section) => (
+      {cardsData.map((section) => (
         <div key={section.heading}>
           <h5 className="text-xl font-bold">{section.heading}</h5>
           <div className="flex flex-wrap gap-4 mt-4">

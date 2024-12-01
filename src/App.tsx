@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import SidePanel from "./components/side-panel/SidePanel";
-import HomeScreen from "./components/main-panel/HomeScreen";
+import MainPanel from "./components/main-panel/MainPanel";
 import Footer from "./components/Footer";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <Header />
       <main className="flex gap-2" style={{ height: "29rem" }}>
         <SidePanel />
-        <HomeScreen />
+        <MainPanel />
       </main>
       <Footer />
     </>
