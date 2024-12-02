@@ -5,7 +5,7 @@ const cardsData = [
     buttonText: "Create playlist",
   },
   {
-    title: "Lt's find some podcasts to follow",
+    title: "Lt's find podcasts to follow",
     subtitle: "We'll keep you updated on new episodes",
     buttonText: "Browse podcasts",
   },
@@ -13,9 +13,15 @@ const cardsData = [
 
 export default function SidePanelCards() {
   return (
-    <div className="m-2 overflow-hidden hover:overflow-y-scroll" style={{height: "15rem"}}>
+    <div
+      className="m-2 overflow-hidden hover:overflow-y-scroll"
+      style={{ height: "16rem" }}
+    >
       {cardsData.map((cardData: any) => (
-        <div className="p-3 mb-4 mt-2 rounded-md" style={{backgroundColor: "#1f1f1f"}}>
+        <div
+          className="p-3 mb-4 mt-2 rounded-md"
+          style={{ backgroundColor: "#1f1f1f" }}
+        >
           <h5 className="font-bold text-sm tracking-tight mb-1">
             {cardData.title}
           </h5>
