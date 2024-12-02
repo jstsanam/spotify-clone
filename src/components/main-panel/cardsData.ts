@@ -1,4 +1,4 @@
-export const sections = [
+export const cardsData = [
   {
     heading: "Popular artists",
     imageBorder: "rounded-full",
