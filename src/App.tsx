@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="flex gap-2" style={{ height: "29rem" }}>
+      <main className="flex gap-2 h-[29rem]">
         <SidePanel />
         <MainPanel />
       </main>
