@@ -14,8 +14,7 @@ export default function SidePanelFooter() {
         {footerLinks.map((link, index) => (
           <li
             key={index}
-            className="text-gray-400 font-semibold inline-flex"
-            style={{ fontSize: "0.5em" }}
+            className="text-gray-400 font-semibold inline-flex text-[0.5em]"
           >
             <a href="/">{link}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </li>

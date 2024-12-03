@@ -4,8 +4,7 @@ export default function Header() {
       <img src="/images/header-logo.png" alt="logo" className="h-6 w-6" />
       <div className="flex items-center gap-2">
         <button
-          className="p-2 rounded-full"
-          style={{ backgroundColor: "#1f1f1f" }}
+          className="p-2 rounded-full bg-[#1f1f1f]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -32,9 +31,8 @@ export default function Header() {
           <input
             type="search"
             id="default-search"
-            className="p-2.5 ps-11 text-sm rounded-full"
+            className="p-2.5 ps-11 text-sm rounded-full bg-[#1f1f1f] w-[25rem]"
             placeholder="What do you want to play?"
-            style={{ backgroundColor: "#1f1f1f", width: "25rem" }}
           />
         </div>
       </div>

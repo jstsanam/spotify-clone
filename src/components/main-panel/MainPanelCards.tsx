@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { cardsData } from "./cardsData";
+import { cardsData } from "../../data/cardsData";
 
 export default function MainPanelCards() {
   const [hoveredCard, setHoveredCard] = useState<{
@@ -16,16 +16,14 @@ export default function MainPanelCards() {
             {section.data.map((item, itemIndex) => (
               <div
                 key={itemIndex}
-                className="p-2 rounded-md cursor-pointer relative"
                 onMouseEnter={() => setHoveredCard({ sectionIndex, itemIndex })}
                 onMouseLeave={() => setHoveredCard(null)}
-                style={{
-                  backgroundColor:
-                    hoveredCard?.sectionIndex === sectionIndex &&
-                    hoveredCard?.itemIndex === itemIndex
-                      ? "rgba(209, 213, 219, 0.1)"
-                      : "",
-                }}
+                className={`p-2 rounded-md cursor-pointer relative ${
+                  hoveredCard?.sectionIndex === sectionIndex &&
+                  hoveredCard?.itemIndex === itemIndex
+                    ? "bg-gray-200/10"
+                    : ""
+                }`}
               >
                 <img
                   src={item.image}
@@ -38,8 +36,7 @@ export default function MainPanelCards() {
                   </div>
                 )}
                 <div
-                  className="mt-2 font-semibold text-gray-400 break-words"
-                  style={{ fontSize: "0.7rem", maxWidth: "7rem" }}
+                  className="mt-2 font-semibold text-gray-400 break-words text-[0.7rem] max-w-[7rem]"
                 >
                   {item.subtitle.length >= 30
                     ? item.subtitle.substring(0, 30) + "..."

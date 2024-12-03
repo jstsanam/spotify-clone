@@ -14,13 +14,11 @@ const cardsData = [
 export default function SidePanelCards() {
   return (
     <div
-      className="m-2 overflow-hidden hover:overflow-y-scroll"
-      style={{ height: "16rem" }}
+      className="m-2 overflow-hidden hover:overflow-y-scroll h-[16rem]"
     >
       {cardsData.map((cardData: any) => (
         <div
-          className="p-3 mb-4 mt-2 rounded-md"
-          style={{ backgroundColor: "#1f1f1f" }}
+          className="p-3 mb-4 mt-2 rounded-md bg-[#1f1f1f]"
         >
           <h5 className="font-bold text-sm tracking-tight mb-1">
             {cardData.title}
