@@ -1,4 +1,4 @@
-import { footerData } from "../../data/footerData";
+import { footerData } from "data/footerData";
 
 export default function MainPanelFooter() {
   return (
@@ -19,13 +19,13 @@ export default function MainPanelFooter() {
           ))}
         </div>
         <div className="flex gap-3">
-          <button className="p-2 rounded-full bg-[#292929]">
+          <button className="p-2 rounded-full bg-zinc-800 hover:bg-zinc-600">
             <img src="/images/social-links/instagram.png" className="h-5 w-5" />
           </button>
-          <button className="p-2 rounded-full bg-[#292929]">
+          <button className="p-2 rounded-full bg-zinc-800 hover:bg-zinc-600">
             <img src="/images/social-links/twitter.png" className="h-5 w-5" />
           </button>
-          <button className="p-2 rounded-full bg-[#292929]">
+          <button className="p-2 rounded-full bg-zinc-800 hover:bg-zinc-600">
             <img src="/images/social-links/facebook.png" className="h-5 w-5" />
           </button>
         </div>

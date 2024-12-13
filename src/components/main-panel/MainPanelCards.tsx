@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { cardsData } from "../../data/cardsData";
+import { cardsData } from "data/cardsData";
+import clsx from 'clsx';
 
 export default function MainPanelCards() {
   const [hoveredCard, setHoveredCard] = useState<{
@@ -18,12 +19,11 @@ export default function MainPanelCards() {
                 key={itemIndex}
                 onMouseEnter={() => setHoveredCard({ sectionIndex, itemIndex })}
                 onMouseLeave={() => setHoveredCard(null)}
-                className={`p-2 rounded-md cursor-pointer relative ${
+                className={clsx(
+                  "p-2 rounded-md cursor-pointer relative",
                   hoveredCard?.sectionIndex === sectionIndex &&
-                  hoveredCard?.itemIndex === itemIndex
-                    ? "bg-gray-200/10"
-                    : ""
-                }`}
+                    hoveredCard?.itemIndex === itemIndex && "bg-gray-200/10"
+                )}
               >
                 <img
                   src={item.image}
@@ -36,7 +36,7 @@ export default function MainPanelCards() {
                   </div>
                 )}
                 <div
-                  className="mt-2 font-semibold text-gray-400 break-words text-[0.7rem] max-w-[7rem]"
+                  className="mt-2 font-semibold text-gray-400 break-words text-xs max-w-28"
                 >
                   {item.subtitle.length >= 30
                     ? item.subtitle.substring(0, 30) + "..."
