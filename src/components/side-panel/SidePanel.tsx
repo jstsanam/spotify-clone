@@ -4,8 +4,7 @@ import SidePanelFooter from "./SidePanelFooter";
 export default function SidePanel() {
   return (
     <div
-      className="rounded-md ml-2"
-      style={{ backgroundColor: "#121212", width: "21%" }}
+      className="rounded-md ml-2 bg-zinc-900 w-1/5"
     >
       <div className="flex justify-between items-center">
         <div className="flex items-center ml-4 gap-2">
